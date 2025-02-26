@@ -14,7 +14,6 @@ class ProjectKanban extends KanbanBoard
 {
     protected static ?string $navigationIcon = 'heroicon-o-view-columns';
     protected static ?string $navigationLabel = 'Project Board';
-    protected static ?string $navigationGroup = 'Projects';
     protected static ?int $navigationSort = 2;
 
     protected static string $model = Project::class;

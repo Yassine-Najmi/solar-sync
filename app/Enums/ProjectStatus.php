@@ -14,4 +14,6 @@ enum ProjectStatus: string
     case Contracted = 'contracted';
     case InProgress = 'in_progress';
     case Completed = 'completed';
+    case UnderMaintenance = 'under_maintenance';
+    case Cancelled = 'cancelled';
 }

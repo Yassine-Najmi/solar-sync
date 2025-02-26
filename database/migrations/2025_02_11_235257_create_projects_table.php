@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->foreignId('client_id')->constrained();
+            $table->string('project_type')->default('installation'); // 'installation' or 'maintenance'
             $table->string('status');
             $table->date('start_date');
             $table->date('estimated_completion_date')->nullable();
